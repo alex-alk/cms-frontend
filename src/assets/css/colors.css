@@ -1,0 +1,10 @@
+@layer base {
+  :root {
+    --color-primary: #727cf5;
+    --color-primary-hover: #6973e3;
+    --color-secondary: #6c757d;
+    --color-secondary-hover: #646c74;
+    --color-danger: #fa5c7c;
+    --color-danger-hover: #e75573;
+  }
+}

@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+@import './unicons.css';
+@import './css/materialdesignicons.min.css';
+@import './css/colors.css';
+@import './css/buttons.css';
+
+@font-face {
+  font-family: 'Nunito';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200 1000;
+  src: url('./fonts/nunito.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 200 1000;
+  src: url('./fonts/nunito-italic.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+}
+
+@layer components {
+  .card {
+    @apply p-6 bg-white mb-6
+           shadow-[0_0_35px_0_rgba(154,161,171,0.15)];
+  }
+  .card-title {
+    @apply font-bold mb-2 tracking-[.02em];
+  }
+  .card-description {
+    @apply text-[14px] text-[#8a969c] mb-4;
+  }
+  .card hr {
+    @apply border-b border-[#e5e8eb] mb-6 flex;
+  }
+  .input {
+    @apply transition-colors duration-200 placeholder-[rgb(108,117,125)] placeholder:opacity-80 border border-[#e5e8eb] block w-full px-[0.9rem] py-[0.45rem] text-[0.9rem] font-normal leading-normal rounded-sm;
+  }
+  .input:focus {
+    @apply border-[#a1a9b1] outline-none shadow-[inset_0_1px_1px_rgba(0,0,0,0.075),0_0_8px_#a1a9b199];
+  }
+
+  .input:hover {
+    @apply border-[#a1a9b1];
+  }
+  .label {
+    @apply font-semibold mb-2 inline-block;
+  }
+  .checkbox {
+    @apply cursor-pointer w-[1.25em] h-[1.25em] mr-2 shrink-0 mt-px align-top appearance-none border-2 border-[#e5e8eb] rounded bg-white checked:bg-[#727cf5] checked:border-[#727cf5] relative after:content-[''] after:absolute after:opacity-0 checked:after:opacity-100 after:left-1.25 after:top-0.5 after:w-1.25 after:h-2.25 after:border-white after:border-r-3 after:border-b-3 after:rotate-45;
+  }
+  .password-eye-box {
+    @apply cursor-pointer flex items-center px-[0.9rem] bg-[#f6f7fb] border border-l-0 border-[#e5e8eb] rounded-sm rounded-tl-none rounded-bl-none;
+  }
+
+  .password-eye-box > span {
+    @apply cursor-pointer text-[16px] transition-colors duration-200;
+  }
+
+  .password-eye-box:hover > span {
+    @apply text-(--color-primary);
+  }
+}
+
+@layer utilities {
+  .text-danger {
+    @apply text-(--color-danger);
+  }
+  .text-muted {
+    @apply text-[#8a969c];
+  }
+}
