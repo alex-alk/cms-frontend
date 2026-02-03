@@ -14,7 +14,11 @@ const router = createRouter({
         },
         {
           path: '/countries',
-          component: () => import('../views/Geography/CountriesPage.vue'),
+          component: () => import('../views/geography/CountriesPage.vue'),
+        },
+        {
+          path: '/tour-op-list',
+          component: () => import('../views/settings/TourOpList.vue'),
         },
       ],
     },

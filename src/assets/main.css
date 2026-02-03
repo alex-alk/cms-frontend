@@ -38,6 +38,21 @@ body {
 }
 
 @layer components {
+  .modal-backdrop {
+    @apply fixed invisible opacity-0 top-0 left-0 w-screen h-screen bg-[rgb(108,117,125,0.75)] transition-all duration-150 ease-linear;
+  }
+  .modal-wrapper {
+    @apply fixed invisible top-0 left-0 z-10 w-full h-full overflow-x-hidden overflow-y-auto transition-all duration-150 ease-linear;
+  }
+  .modal {
+    @apply max-w-125 bg-white z-1 relative left-0 right-0 mx-auto top-8 rounded-[0.3rem];
+  }
+  .modal-header {
+    @apply py-6 px-8 flex items-center;
+  }
+  .btn-close {
+    @apply ml-auto hover:text-[black] cursor-pointer;
+  }
   .card {
     @apply p-6 bg-white mb-6
            shadow-[0_0_35px_0_rgba(154,161,171,0.15)];
