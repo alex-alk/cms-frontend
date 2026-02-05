@@ -35,35 +35,13 @@ api.get('/countries').then(({ data }) => {
 <template>
   <PageTop bitem1="Geography" bitem2="Tour operator" title="Countries" />
 
-
-  <div class="flex items-center mb-10 card">
-    <div class="flex items-center text-(--color-primary) tracking-wide">
-      <span
-        class="flex items-center justify-center w-8 h-8 border-2 border-(--color-primary) rounded-full font-bold mr-2 shadow-[0_0_10px_rgba(114,124,245,0.2)]">
-        1
-      </span>
-      <span class="font-bold uppercase text-xs tracking-wider">Sursă Date</span>
-    </div>
-
-    <div class="flex-1 h-px bg-gray-200 mx-6"></div>
-
-    <div class="flex items-center text-gray-400">
-      <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-200 rounded-full font-bold mr-2">
-        3
-      </span>
-      <span class="font-bold uppercase text-xs tracking-wider">Mapping & Validare</span>
-    </div>
-
-    <div class="flex-1 h-px bg-gray-200 mx-6"></div>
-
-    <div class="flex items-center text-gray-400">
-      <span class="flex items-center justify-center w-8 h-8 border-2 border-gray-200 rounded-full font-bold mr-2">
-        3
-      </span>
-      <span class="font-bold uppercase text-xs tracking-wider">Finalizare</span>
+  <div class="flex gap-6">
+    <div class="card flex-1">
+      <h4 class="card-title">DEFAULT CARDS</h4>
+      <p class="card-description">Simple widget of tabbable panes of local content.</p>
+      <hr>
     </div>
   </div>
-
 
 
   <div class="flex items-center mb-10 bg-white p-6 rounded-lg shadow-sm card">

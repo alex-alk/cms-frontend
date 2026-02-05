@@ -13,8 +13,20 @@ const router = createRouter({
           component: () => import('../views/AboutView.vue'),
         },
         {
+          path: '/standard-countries',
+          component: () => import('../views/geography/CountriesPage.vue'),
+        },
+        {
           path: '/countries',
           component: () => import('../views/geography/CountriesPage.vue'),
+        },
+        {
+          path: '/regions',
+          component: () => import('../views/geography/RegionsPage.vue'),
+        },
+        {
+          path: '/hotels',
+          component: () => import('../views/travel-products/HotelsPage.vue'),
         },
         {
           path: '/tour-op-list',

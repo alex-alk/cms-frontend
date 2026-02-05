@@ -54,7 +54,7 @@ body {
     @apply ml-auto hover:text-[black] cursor-pointer;
   }
   .card {
-    @apply p-6 bg-white mb-6
+    @apply p-6 bg-white mb-6 rounded-sm
            shadow-[0_0_35px_0_rgba(154,161,171,0.15)];
   }
   .card-title {
